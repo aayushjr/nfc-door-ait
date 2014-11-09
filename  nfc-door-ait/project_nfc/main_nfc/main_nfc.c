@@ -31,15 +31,26 @@ int main()
     timebase_config();
 		
     while(1) {
+			
         if (SIC4310_available()) 
 				{
+					
 						i = 0;
 						do {
 							buf[i++] = SIC4310_read();
 						} while(SIC4310_available());
 						buf[i] = 0;
         }
-				SIC4310_write(buf);
+				if (checkvalidation(buf))
+				{
+					SIC4310_write("true");
+				}
+				else
+				{
+					SIC4310_write("false");
+				}
 				delay(1000);
+				
+				
     }
 }

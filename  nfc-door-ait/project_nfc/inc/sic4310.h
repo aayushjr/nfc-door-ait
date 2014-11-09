@@ -25,6 +25,7 @@ void SIC4310_write(char*);
 void write(uint8_t);
 void print(char*);
 uint16_t SIC4310_available(void);
+int checkvalidation(char*);
 
 
 #ifdef __cplusplus
