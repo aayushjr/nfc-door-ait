@@ -8,6 +8,7 @@
 
 /* Includes -----------------------------------------------------------------------*/
 #include "sic4310.h"
+#include<string.h>
 
 /* Private types ------------------------------------------------------------------*/
 /* Private constants --------------------------------------------------------------*/
@@ -211,5 +212,17 @@ void USART1_IRQHandler()
 			//USART_SendData(USART1,data);
     }
 }
+
+int checkvalidation(char *string)
+{
+	if (strcmp(string,"home") == 0)
+	{
+		return 1;
+	}
+	else
+		return 0;
+	
+}
+
 
 

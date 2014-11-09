@@ -29,3 +29,4 @@
 .\output\sic4310.o: .\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h
 .\output\sic4310.o: .\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h
 .\output\sic4310.o: .\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h
+.\output\sic4310.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
