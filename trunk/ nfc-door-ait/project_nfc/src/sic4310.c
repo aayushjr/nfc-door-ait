@@ -69,6 +69,12 @@ void SIC4310_config()
     
     USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
     USART_ITConfig(USART1, USART_IT_TXE, DISABLE);
+		
+		
+			_rx_buffer.head = 0;
+	_rx_buffer.tail = 0;
+	_tx_buffer.head = 0;
+	_tx_buffer.tail = 0;
 }
 
 
@@ -79,6 +85,14 @@ void SIC4310_config()
 */
 void SIC4310_read(SIC4310_Struct *pmsg)
 {
+	GPIO_TypeDef *gpio_port = digitalPinToPort(pin);
+	uint16_t gpio_pin = digitalPinToBitMask(pin);
+	
+	if (value == HIGH) {
+		GPIO_WriteBit(gpio_port, gpio_pin, Bit_SET); 
+	} else {
+		GPIO_WriteBit(gpio_port, gpio_pin, Bit_RESET);
+	}
 }
 
 
@@ -89,6 +103,25 @@ void SIC4310_read(SIC4310_Struct *pmsg)
 */
 void SIC4310_write(SIC4310_Struct *pmsg)
 {
+	int i = (_tx_buffer.head + 1) % SERIAL_BUFFER_SIZE;
+
+	// Send immediately if Tx buffer is empty and not transmitting
+	if ( (_tx_buffer.head == _tx_buffer.tail) && !transmitting ) {
+		USART_SendData(USART2, byte);
+		USART_ITConfig(USART2, USART_IT_TXE, ENABLE);
+		transmitting = 1;
+		return;
+	}
+	
+	// Wait for empty space in buffer
+	while (i == _tx_buffer.tail);
+	
+	_tx_buffer.buffer[_tx_buffer.head] = byte;
+	_tx_buffer.head = i;
+	
+	USART_ITConfig(USART2, USART_IT_TXE, DISABLE);
+	transmitting = 1;
+	USART_ITConfig(USART2, USART_IT_TXE, ENABLE);
 }
 
 
@@ -97,9 +130,9 @@ void SIC4310_write(SIC4310_Struct *pmsg)
 * @param    None
 * @retval   True if available, 0 otherwise
 */
-int SIC4310_available(void)
+uint16_t SIC4310_available(void)
 {
-    return 0;
+    return (uint16_t)(SERIAL_BUFFER_SIZE + _rx_buffer.head - _rx_buffer.tail) % SERIAL_BUFFER_SIZE;
 }
 
 
@@ -117,3 +150,5 @@ void USART1_IRQHandler()
         USART_SendData(USART1,data);
     }
 }
+
+
