@@ -17,16 +17,45 @@ compiling stm32f0xx_misc.c...
 compiling main_nfc.c...
 compiling util.c...
 compiling sic4310.c...
-src\sic4310.c(18): warning:  #177-D: variable "buffer_msg" was declared but never referenced
-  static SIC4310_Struct buffer_msg;
+src\sic4310.c(123): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
 src\sic4310.c: 1 warning, 0 errors
 linking...
-Program Size: Code=5544 RO-data=224 RW-data=40 ZI-data=1632  
+Program Size: Code=5900 RO-data=224 RW-data=44 ZI-data=2164  
 ".\output\nfc_door_ait.axf" - 0 Error(s), 1 Warning(s).
 Load "C:\\Users\\Aayush\\Documents\\7th Semester\\Embedded Systems\\NFC\\ nfc-door-ait\\project_nfc\\output\\nfc_door_ait.axf" 
 Erase Done.
 Programming Done.
 Verify OK.
-</pre>
-</body>
-</html>
+Error(s), 2 Warning(s).
+"data" was declared but never referenced
+                uint8_t data;
+src\sic4310.c(30): warning:  #177-D: variable "buffer_msg" was declared but never referenced
+  static SIC4310_Struct buffer_msg;
+src\sic4310.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=5900 RO-data=224 RW-data=44 ZI-data=2180  
+".\output\nfc_door_ait.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\Users\\Aayush\\Documents\\7th Semester\\Embedded Systems\\NFC\\ nfc-door-ait\\project_nfc\\output\\nfc_door_ait.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+ystems\\NFC\\ nfc-door-ait\\project_nfc\\output\\nfc_door_ait.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+door_ait.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+\sic4310.c(130): error:  #159: declaration is incompatible with previous "write_fcn" (declared at line 124)
+  void write_fcn(uint8_t byte){
+src\sic4310.c(155): error:  #159: declaration is incompatible with previous "print_fcn" (declared at line 123)
+  void print_fcn(char *string){
+src\sic4310.c(176): warning:  #177-D: variable "data" was declared but never referenced
+                uint8_t data;
+src\sic4310.c(30): warning:  #177-D: variable "buffer_msg" was declared but never referenced
+  static SIC4310_Struct buffer_msg;
+src\sic4310.c: 6 warnings, 6 errors
+".\output\nfc_door_ait.axf" - 7 Error(s), 6 Warning(s).
+Target not created
