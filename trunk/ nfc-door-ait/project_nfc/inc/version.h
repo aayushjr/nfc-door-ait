@@ -1,6 +1,6 @@
 /**
 * Project NFC_Door_AIT
-* Version 0.1
+* Version 0.4
 * 
 * Toolchain:  Keil MDK-ARM 4.73
 * Device:  STM32F051R8
@@ -14,4 +14,4 @@
 */
 
 # undef VERSION
-# define VERSION "NFC_Door_AIT 0.1"
+# define VERSION "NFC_Door_AIT 0.4"
