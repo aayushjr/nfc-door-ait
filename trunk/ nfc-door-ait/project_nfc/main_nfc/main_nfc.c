@@ -23,16 +23,23 @@
 */
 int main()
 {
-    SIC4310_Struct msg;
+		char buf[20];
+		int i = 0;
+    //SIC4310_Struct msg;
     
     SIC4310_config();
     timebase_config();
+		
     while(1) {
-        if (SIC4310_available()) {
-            SIC4310_read(&msg);
-						delay(1000);
-            SIC4310_write(&msg);
+        if (SIC4310_available()) 
+				{
+						i = 0;
+						do {
+							buf[i++] = SIC4310_read();
+						} while(SIC4310_available());
+						buf[i] = 0;
         }
+				SIC4310_write(buf);
 				delay(1000);
     }
 }
