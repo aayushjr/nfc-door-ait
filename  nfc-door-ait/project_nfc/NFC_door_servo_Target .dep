@@ -1,6 +1,6 @@
-Dependencies for Project 'nfc_door_ait', Target 'Target ': (DO NOT MODIFY !)
-F (.\src\startup_stm32f051.s)(0x547A244A)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx--list .\startup_stm32f051.lst --xref -o .\output\startup_stm32f051.o --depend .\output\startup_stm32f051.d)
-F (.\src\system_stm32f0xx.c)(0x547A244A)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\system_stm32f0xx.o --omf_browse .\output\system_stm32f0xx.crf --depend .\output\system_stm32f0xx.d)
+Dependencies for Project 'NFC_door_servo', Target 'Target ': (DO NOT MODIFY !)
+F (.\src\startup_stm32f051.s)(0x547A244A)()
+F (.\src\system_stm32f0xx.c)(0x547A244A)()
 I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
 I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
@@ -29,7 +29,7 @@ I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
-F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_gpio.c)(0x547A2445)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\stm32f0xx_gpio.o --omf_browse .\output\stm32f0xx_gpio.crf --depend .\output\stm32f0xx_gpio.d)
+F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_gpio.c)(0x547A2445)()
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x547A2447)
 I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
 I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
@@ -58,65 +58,7 @@ I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
-F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rcc.c)(0x547A2443)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\stm32f0xx_rcc.o --omf_browse .\output\stm32f0xx_rcc.crf --depend .\output\stm32f0xx_rcc.d)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x547A2445)
-I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209B540)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209B542)
-I (C:\Keil\ARM\Inc\ST\STM32F0xx\system_stm32f0xx.h)(0x5269EC0C)
-I (.\inc\stm32f0xx_conf.h)(0x547A2440)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x547A2445)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
-F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_usart.c)(0x547A2445)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\stm32f0xx_usart.o --omf_browse .\output\stm32f0xx_usart.crf --depend .\output\stm32f0xx_usart.d)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
-I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209B540)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209B542)
-I (C:\Keil\ARM\Inc\ST\STM32F0xx\system_stm32f0xx.h)(0x5269EC0C)
-I (.\inc\stm32f0xx_conf.h)(0x547A2440)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x547A2445)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x547A2445)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
-F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_misc.c)(0x547A2445)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\stm32f0xx_misc.o --omf_browse .\output\stm32f0xx_misc.crf --depend .\output\stm32f0xx_misc.d)
+F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_misc.c)(0x547A2445)()
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
 I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
 I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
@@ -145,7 +87,36 @@ I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
-F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_tim.c)(0x547A2444)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\stm32f0xx_tim.o --omf_browse .\output\stm32f0xx_tim.crf --depend .\output\stm32f0xx_tim.d)
+F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rcc.c)(0x547A2443)()
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x547A2445)
+I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209B540)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209B542)
+I (C:\Keil\ARM\Inc\ST\STM32F0xx\system_stm32f0xx.h)(0x5269EC0C)
+I (.\inc\stm32f0xx_conf.h)(0x547A2440)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x547A2445)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
+F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_tim.c)(0x547A2444)()
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
 I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
 I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
@@ -174,8 +145,8 @@ I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
-F (.\main_nfc\main_nfc.c)(0x547A2AC0)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\main_nfc.o --omf_browse .\output\main_nfc.crf --depend .\output\main_nfc.d)
-I (.\inc\sic4310.h)(0x547A2440)
+F (.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_usart.c)(0x547A2445)()
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
 I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
 I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
@@ -201,72 +172,9 @@ I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x547A2445)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
-I (.\inc\util.h)(0x547A2440)
-F (.\src\util.c)(0x547A244A)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\util.o --omf_browse .\output\util.crf --depend .\output\util.d)
-I (.\inc\util.h)(0x547A2440)
-I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209B540)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209B542)
-I (C:\Keil\ARM\Inc\ST\STM32F0xx\system_stm32f0xx.h)(0x5269EC0C)
-I (.\inc\stm32f0xx_conf.h)(0x547A2440)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x547A2445)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x547A2445)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
-F (.\src\sic4310.c)(0x547A244A)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\sic4310.o --omf_browse .\output\sic4310.crf --depend .\output\sic4310.d)
-I (.\inc\sic4310.h)(0x547A2440)
-I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209B540)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209B542)
-I (C:\Keil\ARM\Inc\ST\STM32F0xx\system_stm32f0xx.h)(0x5269EC0C)
-I (.\inc\stm32f0xx_conf.h)(0x547A2440)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x547A2445)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x547A2445)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
-I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
-I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7C554)
-F (.\src\servolib.c)(0x547A250E)(-c --cpu Cortex-M0 -D__EVAL -g -O0 --apcs=interwork -I.\inc -I.\libs\STM32F0xx_StdPeriph_Driver\inc-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F0xx-DUSE_STDPERIPH_DRIVER -DSTM32F051-o .\output\servolib.o --omf_browse .\output\servolib.crf --depend .\output\servolib.d)
+F (.\src\servolib.c)(0x547A250E)()
 I (.\inc\servolib.h)(0x547A2505)
 I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
 I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
@@ -296,3 +204,64 @@ I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
 I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
+F (.\src\util.c)(0x547A244A)()
+I (.\inc\util.h)(0x547A2440)
+I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209B540)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209B542)
+I (C:\Keil\ARM\Inc\ST\STM32F0xx\system_stm32f0xx.h)(0x5269EC0C)
+I (.\inc\stm32f0xx_conf.h)(0x547A2440)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x547A2445)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x547A2445)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
+F (.\main_nfc\servotest.c)(0x547A294D)()
+I (.\inc\servolib.h)(0x547A2505)
+I (C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h)(0x5269EC0C)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x5209B540)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7C554)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x5209B540)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x5209B542)
+I (C:\Keil\ARM\Inc\ST\STM32F0xx\system_stm32f0xx.h)(0x5269EC0C)
+I (.\inc\stm32f0xx_conf.h)(0x547A2440)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x547A2445)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x547A2445)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x547A2447)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x547A2446)
+I (.\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x547A2447)
+I (.\inc\util.h)(0x547A2440)

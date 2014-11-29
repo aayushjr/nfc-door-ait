@@ -45,7 +45,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\output\</OutputDirectory>
-          <OutputName>nfc_door_ait</OutputName>
+          <OutputName>NFC_door_servo</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -357,7 +357,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\inc;.\libs\STM32F0xx_StdPeriph_Driver\inc</IncludePath>
+              <IncludePath>.\inc;.\src;.\libs\STM32F0xx_StdPeriph_Driver\inc;.\libs\STM32F0xx_StdPeriph_Driver\src;..\project_nfc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -419,34 +419,24 @@
               <FilePath>.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_gpio.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f0xx_rcc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rcc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f0xx_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_usart.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f0xx_misc.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f0xx_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rcc.c</FilePath>
             </File>
             <File>
               <FileName>stm32f0xx_tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_tim.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>main</GroupName>
-          <Files>
             <File>
-              <FileName>main_nfc.c</FileName>
+              <FileName>stm32f0xx_usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\main_nfc\main_nfc.c</FilePath>
+              <FilePath>.\libs\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -454,19 +444,24 @@
           <GroupName>hal</GroupName>
           <Files>
             <File>
+              <FileName>servolib.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\servolib.c</FilePath>
+            </File>
+            <File>
               <FileName>util.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\util.c</FilePath>
             </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>main</GroupName>
+          <Files>
             <File>
-              <FileName>sic4310.c</FileName>
+              <FileName>servotest.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\sic4310.c</FilePath>
-            </File>
-            <File>
-              <FileName>servolib.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\servolib.c</FilePath>
+              <FilePath>.\main_nfc\servotest.c</FilePath>
             </File>
           </Files>
         </Group>
