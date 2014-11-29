@@ -29,7 +29,7 @@ int main()
     
     SIC4310_config();
     timebase_config();
-		
+	
     while(1) {
 			
         if (SIC4310_available()) 
