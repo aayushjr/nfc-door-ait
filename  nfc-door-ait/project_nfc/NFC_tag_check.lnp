@@ -1,0 +1,15 @@
+--cpu Cortex-M0
+".\system_stm32f0xx.o"
+".\startup_stm32f051.o"
+".\stm32f0xx_tim.o"
+".\stm32f0xx_rcc.o"
+".\stm32f0xx_usart.o"
+".\stm32f0xx_gpio.o"
+".\stm32f0xx_misc.o"
+".\nfc_tag_check.o"
+".\util.o"
+".\sic4310.o"
+".\tag_protocol_test.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\NFC_tag_check.map" -o .\NFC_tag_check.axf
