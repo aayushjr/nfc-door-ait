@@ -12,7 +12,7 @@
 #include <string.h>
 #include "protocol.h"
 #include "servolib.h"
-
+#include <stdio.h>
 /* Private types ------------------------------------------------------------------*/
 /* Private constants --------------------------------------------------------------*/
 /* Private macro ------------------------------------------------------------------*/
@@ -27,6 +27,7 @@
 int main()
 {
 		char buf[20];
+		int checkchange = 0;
 		int i = 0;
     //SIC4310_Struct msg;
     
@@ -44,18 +45,25 @@ int main()
 							buf[i++] = SIC4310_read();
 						} while(SIC4310_available());
 						buf[i] = 0;
+						checkchange = 1;
         }
-				
-				if (checktag(buf))
+				if (checkchange)
 				{
-					SIC4310_write("true");
-					changePulse_fcn(96000);
+					if (checktag(buf) && Get_State() == 0)
+					{
+					
+						SIC4310_write("Door unlock");
+						changePulse_fcn(OPEN);
+					}
+					else if(checktag(buf))
+					{
+						
+						SIC4310_write("Door lock");
+						changePulse_fcn(CLOSE);
+					}
+					checkchange = 0 ;
 				}
-				else
-				{
-					SIC4310_write("false");
-					changePulse_fcn(0);
-				}
+		
 				delay(1000);
 				buf[0] = 0;
 				
