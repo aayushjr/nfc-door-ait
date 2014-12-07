@@ -10,6 +10,7 @@
 ".\output\util.o"
 ".\output\sic4310.o"
 ".\output\servolib.o"
+".\output\protocol.o"
 --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\nfc_door_ait.map" -o .\output\nfc_door_ait.axf

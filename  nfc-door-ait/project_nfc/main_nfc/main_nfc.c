@@ -9,6 +9,9 @@
 /* Includes -----------------------------------------------------------------------*/
 #include "sic4310.h"
 #include "util.h"
+#include <string.h>
+#include "protocol.h"
+#include "servolib.h"
 
 /* Private types ------------------------------------------------------------------*/
 /* Private constants --------------------------------------------------------------*/
@@ -29,9 +32,10 @@ int main()
     
     SIC4310_config();
     timebase_config();
-	
-    while(1) {
-			
+		Servo_fcn();
+		//strcpy(buf,"KEY123");
+    
+		while(1){
         if (SIC4310_available()) 
 				{
 					
@@ -41,15 +45,19 @@ int main()
 						} while(SIC4310_available());
 						buf[i] = 0;
         }
-				if (checkvalidation(buf))
+				
+				if (checktag(buf))
 				{
 					SIC4310_write("true");
+					changePulse_fcn(96000);
 				}
 				else
 				{
 					SIC4310_write("false");
+					changePulse_fcn(0);
 				}
 				delay(1000);
+				buf[0] = 0;
 				
 				
     }
