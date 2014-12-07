@@ -34,11 +34,7 @@ void TIM2_IRQHandler(void){
  if(TIM_GetITStatus(TIM2, TIM_IT_Update) == SET){
  TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
 
- //Limit PulseWidth to 48k
- if(PulseWidth>960000)
- {
-		PulseWidth = 960000;
- }
+
  //Set capture compare register to 1ms+PulseWidth time
  //Each PulseWidth time is equal to 20.833ns
  //meaning 20.8333ns*48000 = 1ms
@@ -115,4 +111,14 @@ void Servo_fcn(void)
  void changePulse_fcn(uint32_t val)
  {
 	 PulseWidth = val;   //  96000; for 180 degrees
+ }
+ 
+ //Return 1 if open, 0 if close
+ int Get_State(void)
+ {
+	 if (PulseWidth == OPEN)
+	 {
+		 return 1;
+	 }
+	 return 0;
  }
