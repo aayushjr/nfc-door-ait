@@ -25,8 +25,12 @@ int checktag(char *string)
 	if (strcmp(buf2,"KEY") == 0)
 	{
 			strncpy(buf2, string+3, 3);
-		if(strcmp(buf2,"123") == 0)
+		if(strcmp(buf2,"456") == 0)
+			return 2;
+		else if (strcmp(buf2,"123") == 0)
+		{ 
 			return 1;
+		}
 		else 
 			return 0;
 			
