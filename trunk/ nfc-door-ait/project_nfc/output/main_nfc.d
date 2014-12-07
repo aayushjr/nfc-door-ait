@@ -30,3 +30,6 @@
 .\output\main_nfc.o: .\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h
 .\output\main_nfc.o: .\libs\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h
 .\output\main_nfc.o: .\inc\util.h
+.\output\main_nfc.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\output\main_nfc.o: .\inc\protocol.h
+.\output\main_nfc.o: .\inc\servolib.h
