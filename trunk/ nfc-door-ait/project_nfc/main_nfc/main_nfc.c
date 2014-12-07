@@ -49,13 +49,20 @@ int main()
         }
 				if (checkchange)
 				{
-					if (checktag(buf) && Get_State() == 0)
+					if (checktag(buf)== 2 && Get_State() == 0)
+					{
+						SIC4310_write("Door Auto-unlock");
+						changePulse_fcn(OPEN);
+						delay(15000);               // 15s delay for a person to get in and close the door
+						changePulse_fcn(CLOSE);
+					}
+					else if (checktag(buf)==1 && Get_State() == 0)
 					{
 					
 						SIC4310_write("Door unlock");
 						changePulse_fcn(OPEN);
 					}
-					else if(checktag(buf))
+					else if(checktag(buf)==1)
 					{
 						
 						SIC4310_write("Door lock");
