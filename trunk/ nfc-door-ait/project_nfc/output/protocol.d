@@ -1,4 +1,4 @@
-.\output\protocol.o: protocol.c
+.\output\protocol.o: src\protocol.c
 .\output\protocol.o: .\inc\protocol.h
 .\output\protocol.o: C:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h
 .\output\protocol.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
